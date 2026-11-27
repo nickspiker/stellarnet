@@ -1,0 +1,21 @@
+StellarNet spectrometer firmware
+
+driver/src/firmware.rs contains the EZ-USB (Cypress CY7C68013A) firmware that
+StellarNet's Python driver uploads to its spectrometers when they are plugged
+in. It was taken from the Intel hex embedded in stellarnet_driver3 v2.5, whose
+documentation states:
+
+    Copyright 2024 StellarNet, Inc.
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+
+It is redistributed under that license (LICENSE-APACHE). Changes: the Intel
+hex records were converted to a Rust table of (address, bytes), sorted by
+address, after checking every record's checksum; the bytes themselves are
+unchanged.
+
+The rest of this repository is Copyright (c) 2026 Nick Spiker, licensed under
+either of the MIT license (LICENSE-MIT) or the Apache License, Version 2.0
+(LICENSE-APACHE), at your option.

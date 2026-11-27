@@ -1,0 +1,15 @@
+# patchscan: measures a Verichrome target on the StellarNet in a fluor window — the target's layout, live colour under the fibre, the spectral readout — saved as one VSF per target.
+[package]
+name = "patchscan"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[workspace]
+
+[dependencies]
+fluor = { path = "../../fluor", features = ["host-winit"] }
+vsf = { path = "../../vsf" }
+stellarnet = { path = "../driver" }
+reed-solomon = "0.2.1"
+chameleon = { path = "../../chameleon" }

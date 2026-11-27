@@ -1,0 +1,16 @@
+# StellarNet: the live spectrum from the StellarNet spectrometer in a fluor window, on the Rust driver in driver/.
+[package]
+name = "stellarnet-view"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "stellarnet"
+path = "src/main.rs"
+
+[dependencies]
+fluor = { path = "../fluor", features = ["host-winit"] }
+# text-encode: sample names are `x` (any human's words, Huffman-coded), which needs it to read back.
+vsf = { path = "../vsf", features = ["text-encode"] }
+stellarnet = { path = "driver" }

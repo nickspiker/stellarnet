@@ -1,0 +1,12 @@
+# stellarnet: the StellarNet USB spectrometer in Rust — firmware load, EEPROM calibration, exposure and readout over usbfs, nothing between us and the wire.
+[package]
+name = "stellarnet"
+version = "0.1.0"
+edition = "2024"
+# The firmware in src/firmware.rs is StellarNet's, under Apache-2.0 (see NOTICE at the repository's root); the rest is MIT OR Apache-2.0.
+license = "MIT OR Apache-2.0"
+
+[workspace]
+
+[dependencies]
+nusb = "0.2.3"

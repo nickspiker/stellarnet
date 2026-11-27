@@ -1,0 +1,14 @@
+/target
+/.venv
+/patchscan/target
+/driver/target
+__pycache__/
+# StellarNet's own documents, kept beside the code but not published (their copyright).
+/stellarnet_driver3-Documentation_v2.5.pdf
+/What's New.txt
+# Measurement data from the old viewer, not part of the code.
+/Lazer emissive from 250 to 1100 nm
+/spectral tints.csv
+/spectral tints.ods
+/spectral.csv
+/spectrum.raw
